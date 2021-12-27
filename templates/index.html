@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+
+<h2>Error Detection In The Circuit Board</h2>
+
+<div>
+   
+    <form action = "/detection" method = "POST"
+         enctype = "multipart/form-data">
+         <label for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+        <!-- <input type = "submit"/> -->
+        <div class="image-section" style="display:none;">
+            <div class="img-preview">
+                <img id="imagePreview">
+                </img>
+            </div>
+            <input type = "submit" class="btn btn-primary btn-lg " id="btn-predict" value="Detection">
+        </div>
+    </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block content %}
+
+<h2>Error Detection In The Circuit Board</h2>
+
+<div>
+	<form action = "http://localhost:5000" enctype = "multipart/form-data">
+            
+		<div><img id="result" src="data:image/png;base64,{{ doc }}"></div>
+		</br>
+		<div><input type = "submit" class="btn btn-primary btn-lg " value="Back"></div>
+
+    </form>
+  
+
+</div>
+
+{% endblock %}
